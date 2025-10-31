@@ -9,7 +9,7 @@ const dbName = "Practica2";
 
 export const connectMongoDB = async (): Promise<void> => {
   try {
-    const mongoUrl = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.CLUSTER}.mwb9ctv.mongodb.net/?appName=${process.env.CLUSTER_NAME}`
+    const mongoUrl = "mongodb+srv://Nico1:Prueba@basebackend.mwb9ctv.mongodb.net/?appName=BaseBackend"
 
     client = new MongoClient(mongoUrl);
     await client.connect();
